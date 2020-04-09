@@ -1,0 +1,1 @@
+.header{margin:0 auto;min-height:85px;width:1140px;display:flex;justify-content:space-between;flex-direction:row;align-items:center}.header .country{margin:5px 11px;float:left}.header__text{color:#242424;line-height:18px;height:70px;width:200px;padding-left:50px}.header__name{font-size:14px;font-weight:700;height:10px}.header__addres,.header__phone{font-weight:300}
