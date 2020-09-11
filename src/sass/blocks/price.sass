@@ -1,7 +1,10 @@
 .price
     min-height: 608px
-    padding: 53px 391px 0px 391px // интересно почему-же паддинг с низу такой большой сам по себе xD
+    //padding: 62px 391px 0px 391px // интересно почему-же паддинг с низу такой большой сам по себе xD
+    padding-right: 391px
+    padding-left: 391px
     &__title
+        padding-top: 62px
         text-align: center
         color: #2e2e2e
         font-family: Roboto
@@ -23,12 +26,15 @@
         font-weight: 300
         line-height: 24px
         text-align: center
+        width: 700px
+        margin: 0 auto
     &__wrapper
         padding-top: 35px
         display: flex
         align-items: flex-start
         flex-direction:row
         justify-content: space-between
+        width: 1145px
     &__box
         border: 1px solid #e9e9e9
         width: 265px 
@@ -37,10 +43,10 @@
     
     &__head
         background-color: #25333c
-        padding: 24px 58px 22px 59px
+        padding: 13px 58px 22px 59px
         color: #ffffff
         font-family: Roboto
-        font-size: 16px
+        font-size: 11px
         font-weight: 700
         line-height: 23px
         text-transform: uppercase
@@ -49,29 +55,58 @@
         margin: 0 auto
         padding-top: 14px
     &__box__title
-        padding-top: 12px
+        padding-top: 5px
         color: #2e2e2e
         font-family: Roboto
         font-size: 14px
         font-weight: 400
         text-transform: uppercase
     &__money
-        margin-top: 13px
-        color: #ec644b
+        /** margin-top: 13px **/
+        padding-top: 4px
         font-size: 28px
         line-height: 30px
         color: #ec644b
     &__box__descr
-        padding-top: 19px
+        padding-top: 10px
         color: #2e2e2e
         font-family: Roboto
         font-size: 14px
         font-weight: 300
         line-height: 20px
-        padding-bottom: 25px
+        padding-bottom: 23px
     button   
         width: 160px
         height: 45px
         background-color: #ec644b
         border-radius: 33px
         border: none
+        color: #ffffff
+        font-family: Roboto
+        font-size: 12px
+        text-transform: uppercase
+        &:hover
+            cursor: pointer
+
+@media screen and (max-width: 1200px)
+    .price
+      padding-right: 26px 
+      padding-left: 30px
+    
+@media screen and (max-width: 991px)
+    
+    .price__title
+        padding-top: 30px
+        font-size: 23px
+    .price__descr
+       padding-top: 12px
+       font-size: 20px 
+    .price__wrapper
+        width: 99%
+    .price__box__descr
+        padding-bottom: 17px
+
+// @media {max-width:991px}
+@media (max-width: 991px) and (max-width: 767px)
+    
+  //  @media {max-width:767px}

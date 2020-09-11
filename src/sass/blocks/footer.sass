@@ -1,0 +1,116 @@
+.footer 
+    height: 201px
+    background-color: #25333c
+    &__logo
+        position: absolute
+        margin-top: 23px
+        padding-left: 12px
+    &__descr
+        width: 411px
+        height: 17px
+        color: #ffffff
+        font-family: Roboto
+        font-size: 16px
+        font-weight: 700
+        line-height: 20px
+        padding-top: 53px
+        padding-left: 120px
+        text-align: center
+    &__contacts
+        display: flex
+        justify-content: flex-end
+        align-items: flex-end
+        flex-direction: column
+        margin-right: 171px
+        margin-top: -33px
+    &__question
+        color: #fff
+        font-family: Roboto
+        font-size: 14px
+        font-weight: 300
+        line-height: 24px
+    &__number
+        margin-right: -6px
+        color: #fff
+        font-family: Roboto
+        font-size: 19px
+        font-weight: 700
+        line-height: 20px
+        text-decoration: none
+    &__button
+        position: absolute
+        margin-left: 185px
+        margin-top: 3px
+        width: 160px
+        height: 45px
+        background-color: #ec644b
+        border-radius: 33px
+        border: none
+        &:hover
+            cursor: pointer
+        &__text
+            font-size: 12px
+            font-weight: 400
+            line-height: 22.04px
+            color: white
+    &__divider
+        width: 1171px
+        height: 44px
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-end
+        margin-top: 45px
+        border-top: 1px solid #e9e9e9
+        &__com
+            width: 136px
+            height: 10px
+            opacity: 0.6
+            color: #ffffff
+            font-family: Roboto
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+        &__politic
+            color: #ec644b
+            font-family: Roboto
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+            text-decoration: underline
+        &__site
+            width: 136px
+            height: 10px
+            opacity: .6
+            color: #fff
+            font-family: Roboto
+            font-size: 13px
+            font-weight: 300
+            line-height: 17px
+
+@media screen and (max-width: 1200px)
+    .footer__divider
+        width: 1150px
+@media screen and (max-width: 991px)
+    .footer__contacts
+        margin-right: 195px
+    .footer__divider
+        width: 989px
+    .footer__divider__site
+            height: 15px
+            width: 73px
+@media (max-width: 767px)
+    .footer
+        height: 222px
+    .footer__descr
+        padding-left: 160px
+    .footer__logo 
+        padding-left: 45px
+    .footer__divider
+        width: 765px
+    .footer__contacts
+        margin-top: 10px
+    .footer__divider__com
+        height: 16px
+    .footer__divider__site
+        height: 33px

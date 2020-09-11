@@ -1,8 +1,9 @@
 .advantages
     min-height: 590px
-    padding: 57px 432px 51px 393px
+
     background-color: #f3f3f3
     &__title
+        padding-top: 55px
         color: #2e2e2e
         text-align: center 
         font-family: Roboto Condensed
@@ -15,24 +16,40 @@
         justify-content: center
         align-items: center
         flex-wrap: wrap
+        height: 405px
     img
         float: left
         padding-right: 21px
     &__box
         width: 488px
         height: 65px
-        padding: 31px 0 51px 0
+        padding: 32px 36px 3px 4px
     &__box__subtitle
         color: #ec644b
         font-family: Roboto
         font-size: 16px
         font-weight: 700
     &__box__descr
-        padding-top: 6px
+        padding-top: 3px
         color: #3a3a3a
         font-family: Roboto
         font-size: 14px
         font-weight: 300
         line-height: 22px
         padding-left: 80px
+        width: 423px
+@media screen and (max-width: 991px)
+    .advantages__box
+        padding: 22px 0px 8px 0px
+    .advantages__box__descr
+        width: 350px
+    .delivery__box
 
+@media (max-width: 991px) and (max-width: 767px)
+    .advantages
+        min-height: 715px
+    .advantages__box
+        padding: 35px 1px 10px 50px
+        width: 325px
+    .advantages__box__descr
+        width: 240px

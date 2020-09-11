@@ -6,14 +6,14 @@
     &__logo
         position: absolute
         margin-top: 23px
-        padding: 0
+        padding-left: 12px
     &__menu 
         display: flex
         justify-content: space-between
         align-items: center
         padding-top: 56px 
         list-style-type: none
-        width: 600px
+        width: 613px
         padding-left: 151px
         font-family: Roboto
 
@@ -30,7 +30,7 @@
         justify-content: flex-end
         align-items: flex-end
         flex-direction: column
-        margin-right: 186px
+        margin-right: 171px
         margin-top: -33px
 
     &__question
@@ -40,12 +40,12 @@
         font-weight: 300
         line-height: 24px
     &__number
-        margin-right: -12px
+        margin-right: -6px
         color: #ffffff
         font-family: Roboto
-        font-size: 22px
+        font-size: 19px
         font-weight: 700
-        line-height: 21px
+        line-height: 20px
         text-decoration: none
     &__button
         position: absolute
@@ -56,6 +56,8 @@
         background-color: #ec644b
         border-radius: 33px
         border: none
+        &:hover
+            cursor: pointer
         &__text
             font-size: 12px
             font-weight: 400
@@ -70,25 +72,26 @@
         font-weight: 400
         padding-top: 41px
         padding-left: 255px
+        text-align: center
     &__title
-        padding-left: 135px
+        padding-left: 151px
         padding-top: 15px
         height: 65px
         color: #ec644b
         font-family: "Roboto Condensed"
-        font-size: 70px
+        font-size: 69px
         font-weight: 900
     &__descr
-        padding-left: 157px
+        padding-left: 166px
         padding-top: 16px
         color: #ffffff
         font-family: "Roboto Condensed"
-        font-size: 40px
+        font-size: 41px
         font-weight: 400
         text-transform: uppercase
     &__divider
-        padding-top: 36px   
-        padding-left: 166px
+        padding-top: 36px
+        padding-left: 179px
     &__wrapper
         display: flex
         margin-top: 27px
@@ -100,12 +103,12 @@
             
         &__icons
             position: absolute
-            padding-left: 100px
+            padding-left: 114px
         &__descr
-            padding-top: 67px
-            padding-left: 30px
+            padding-top: 66px
+            padding-left: 42px
             font-family: Roboto
-            font-size: 17px
+            font-size: 16px
             font-weight: 300
             line-height: 22px
             color: #ffffff
@@ -114,11 +117,111 @@
         &__button
             margin: 0 auto
             position: absolute
-            margin-left: 455px
-            margin-top: 65px
+            margin-left: 466px
+            margin-top: 46px
             width: 230px
             height: 57px
             background-color: #ec644b
             border-radius: 33px
             border: none
+            &:hover
+            cursor: pointer
+.header__button__text
+    font-size: 15px
 
+@media screen and (max-width: 991px)
+    .header__menu
+        width: 521px
+        padding-left: 126px
+    .header__contacts
+        margin-right: 194px
+        margin-top: -16px
+    .header__mdescr
+        text-align: center
+        margin: 0 auto
+        font-size: 23px
+        padding-top: 35px
+        padding-left: 0
+    
+    .header__title
+        padding-left: none
+        padding-top: none
+        display: flex
+        text-align: center
+        margin: 0 auto
+        font-size: 57px
+
+    .header__descr
+        padding-left: 0
+        padding-top: 0
+        text-align: center
+        margin: 0 auto
+        font-size: 38px
+    .header__divider
+        align-items: center
+        text-align: center
+        margin: 0 auto
+        display: flex
+        padding-left: 0
+    .header__wrapper
+        width: 991px
+    .header__wrapper__icons
+        padding-left: 78px
+    .header__wrapper__descr
+        padding-left: 0px
+        font-size: 14px
+        height: 57px
+        text-align: center
+    .header__wrapper__button
+        margin-left: 376px
+        
+@media (max-width: 991px) and (max-width: 767px)
+    .header__menu
+        padding-left: 126px
+        width: 620px
+    .header__contacts
+        margin-top: 15px
+    .header__title
+        padding-left: 100px
+        font-size: 46px
+    .header__descr
+        font-size: 25px
+    .header__wrapper
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+    .header__wrapper__box:last-child
+       margin: 0 auto
+       padding-top: 15px
+    .header__wrapper__button
+        padding-top: 10px
+        margin-top: -8px
+        margin-left: 315px
+        width: 200px
+        height: 45px
+        font-size: 13px
+    
+@media (max-width: 767px)
+    .header__wrapper__button
+        margin-top: -60px
+        margin-left: 562px
+    .header__descr
+        font-size: 25px
+    .header__mdescr
+        padding-top: 19px
+    .header__title
+        font-size: 40px
+    .header__wrapper
+        display: flex
+        justify-content: center
+        flex-direction: column
+        align-items: center
+        width: 767px
+        padding-left: 10px
+    .header__divider
+        width: 99%
+        padding-top: 10px
+    .header__wrapper__box
+       
+    .header__wrapper__box:last-child
+        
