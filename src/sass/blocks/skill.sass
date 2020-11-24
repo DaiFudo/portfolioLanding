@@ -1,0 +1,62 @@
+.skill
+    min-height: 600px
+
+
+    &__title
+        text-align: center
+        padding-top: 90px
+        font-size: 35px
+        color: #070707
+        font-family: Roboto Condensed
+    &__descr
+        padding-top: 70px
+        font-size: 18px
+  
+    &__wrapper
+        padding-top: 37px
+        display: flex
+        margin: 0 auto
+        flex-direction: row
+        justify-content: space-between
+        align-items: flex-start
+        width: 945px
+
+    &__box
+        text-align: center
+    &__box__descr
+        padding-top: 25px
+        width: 90px
+        text-align: center
+        color: #828282
+    
+.star-rating
+	font-size: 0
+    
+
+.star-rating__wrap
+	display: inline-block
+	font-size: 1rem
+
+
+.star-rating__wrap:after
+	content: ""
+	display: table
+	clear: both
+
+.star-rating__ico
+	float: right
+	padding-left: 2px
+	cursor: pointer
+	color: #070707
+
+.star-rating__ico:last-child
+	padding-left: 0
+
+.star-rating__input
+	display: none
+
+.star-rating__ico:hover:before,
+.star-rating__ico:hover ~ .star-rating__ico:before,
+.star-rating__input:checked ~ .star-rating__ico:before
+
+	content: "\f005"
