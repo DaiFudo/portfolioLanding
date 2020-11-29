@@ -21,6 +21,7 @@
             text-decoration: none
         a:hover
             color: rgba(7, 7, 7, 1)
+        
     &__info
         margin: 0 auto
         display: flex
@@ -46,12 +47,11 @@
 
         text-decoration-line: none
     &__photo
-        margin: 0 auto
-        display: flex
-        width: 945px
         height: 380px
         padding-bottom: 100px
-        background: url(../img/photo.png) no-repeat
+        background: url(../img/photo.png) no-repeat center
+.hamburger
+    display: none
 
 
 @media screen and (max-width: 375px)
@@ -70,14 +70,46 @@
     .header__menu__link
         padding-right: 0
         border: none 
-        font-size: 70px
+        font-size: 34px
 
     .header__photo
-        background: url(../img/photo2.png) no-repeat
+        background: url(../img/photo2.png) no-repeat center
         z-index: 2
+        
     .header__info
         flex-direction: column  
         width: 375px
     .header__name
         text-align: center
         width: 375px
+.header__menu_item
+    
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50px
+        transform: translateY(-50%)
+        width: 25px
+        height: 12px
+        span
+            background-color: black
+            display: block
+            height: 1px
+            width: 100%
+            margin-bottom: 3px
+            transition: 0.5s all 
+
+        &_active
+            span
+                margin-bottom: -2px
+
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+
+                    &_item
+                        background: #000

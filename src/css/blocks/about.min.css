@@ -1,1 +1,1 @@
-.about{min-height:506px;background-color:#f6f6f6;margin:0 auto;display:flex;text-align:center}.about__me{margin:0 auto;padding-top:120px;width:120px}.about__hello{width:450px;padding-top:15px}
+.about{min-height:506px;background-color:#f6f6f6;margin:0 auto;display:flex;text-align:center}.about__me{margin:0 auto;padding-top:120px;width:120px}.about__hello{width:450px;padding-top:15px}@media screen and (max-width:375px){.about__hello{width:305px;padding-top:15px}}
