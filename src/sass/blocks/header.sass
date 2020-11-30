@@ -84,32 +84,35 @@
         width: 375px
 .header__menu_item
     
-    .hamburger
+.hamburger
+    display: block
+    position: fixed
+    right: 30px
+    top: 50px
+    transform: translateY(-50%)
+    width: 25px
+    height: 12px
+    z-index: 1
+    span
+        background-color: black
         display: block
-        position: absolute
-        right: 10px
-        top: 50px
-        transform: translateY(-50%)
-        width: 25px
-        height: 12px
+        height: 1px
+        width: 100%
+        margin-bottom: 3px
+        transition: 0.5s all 
+
+    &_active
+        
         span
-            background-color: black
-            display: block
-            height: 1px
-            width: 100%
-            margin-bottom: 3px
-            transition: 0.5s all 
-
-        &_active
-            span
-                margin-bottom: -2px
-
-                &:nth-child(1)
-                    transform: translateY(3px) rotate(-45deg)
-                &:nth-child(2)
-                    display: none
-                &:nth-child(3)
-                    transform: translateY(3px) rotate(45deg)
-
-                    &_item
-                        background: #000
+            margin-bottom: -2px
+            &:nth-child(1)
+                transform: translateY(3px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(3px) rotate(45deg)
+                &_item
+                    background: #000
+.header__language
+    margin-right: -285px
+    margin-top: -160px
